@@ -1,0 +1,27 @@
+
+
+.wrap-layout {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('./../../assets/images/bg-storm.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.wrap-layout h1,
+.wrap-layout button {
+    color: var(--color-text-white);
+    text-align: center;
+    font-family: var(--font-montserrat);
+}
+.wrap-layout button {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: background .2s ease-in-out;
+}
+.wrap-layout button:hover {
+    background: var(--color-primary-hover);
+}

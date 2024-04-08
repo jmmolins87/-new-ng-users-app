@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+:root {
+
+    /* Colors */
+    --color-primary: #f05f44;
+    --color-primary-hover: #f82d09;
+    --color-text-black: #424242;
+    --color-text-white: #ffffff;
+
+    /* Fonts */
+    --font-montserrat: font-family: "Montserrat", sans-serif;
+}
