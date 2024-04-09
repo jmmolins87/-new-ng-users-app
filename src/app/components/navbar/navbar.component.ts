@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,5 +10,11 @@ export class NavbarComponent {
 
   @Input()
   title: string = '';
+
+  constructor( private _router: Router ) {}
+
+  goLayout(): void {
+    this._router.navigate(['/layout']);
+  }
 
 }

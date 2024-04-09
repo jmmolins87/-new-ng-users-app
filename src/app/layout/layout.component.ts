@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -8,5 +9,11 @@ import { Component, Input } from '@angular/core';
 export class LayoutComponent {
 
   @Input()
-  title: string = '';
+  title: string = 'Routing and Services';
+
+  constructor( private _router: Router ) {}
+
+  goDashboard(): void {
+    this._router.navigate(['/dashboard']);
+  }
 }

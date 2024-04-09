@@ -1,0 +1,11 @@
+
+
+
+.btn {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    transition: background .2s ease-in-out;
+}
+.btn:hover {
+    background: var(--color-primary-hover);
+}

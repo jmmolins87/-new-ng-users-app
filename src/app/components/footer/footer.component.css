@@ -1,0 +1,12 @@
+
+
+.footer {
+    position: fixed;
+    padding: 16px;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    font-family: var(--font-montserrat);
+    margin: 0;
+}
