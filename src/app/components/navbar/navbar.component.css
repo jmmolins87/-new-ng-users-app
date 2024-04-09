@@ -2,6 +2,7 @@
 .navbar {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .navbar a {
     font-family: var(--font-montserrat);

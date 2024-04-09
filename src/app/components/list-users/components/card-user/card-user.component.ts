@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
-
-import { CardUser } from './interface/card-user.interface';
+import { 
+  Component, 
+  Input, 
+  OnInit 
+} from '@angular/core';
 
 @Component({
   selector: 'app-card-user',
   templateUrl: './card-user.component.html',
   styleUrls: ['./card-user.component.css']
 })
-export class CardUserComponent {
+export class CardUserComponent implements OnInit {
 
-  public img: CardUser = {
-    name: 'User',
-    url: 'https://cdn-icons-png.flaticon.com/512/21/21104.png'
-  };
+  @Input()
+  public data: any = '';
+
+  ngOnInit() {
+    // console.log( this.data )
+  }
 }
